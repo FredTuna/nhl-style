@@ -27,7 +27,7 @@
 /* Reduce score text size*/
 .nhl-scores--horizontal .g5-component--nhl-scores .g5-component--nhl-scores__team-score {
     font-size: 12px;
-    width: 7px;
+    width: 11px;
 }
 
 /* Reduce margin between game boxes*/
@@ -59,6 +59,7 @@
 /* Make the teams names text smaller */
 .g5-component--nhl-scores__team-name-abbrev {
     font-size: 11px;
+    line-height: 2;
     text-align: center;
 }
 
