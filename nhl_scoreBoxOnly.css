@@ -49,9 +49,61 @@
 .g5-component--nhl-scores .g5-component--nhl-scores__team-empty-net, .g5-component--nhl-scores .g5-component--nhl-scores__team-power-play {
     font-size: 6px;
 }
+/* This next section make the score boxes at the top smaller so less scrolling is necessary */
+
+
+/*Reduce size of game boxes (190px originally) */
+.nhl-scores--horizontal .nhl-scores__list-item--game, .nhl-scores--horizontal .nhl-scores__list-item--sponsor {
+    max-width: 90px;
+    min-width: 90px;
+}
+
+/*Reduce size of game boxes (190px originally) */
+.nhl-scores--horizontal .g5-component--nhl-scores {
+    font-size: 1px;
+    min-width: 90px;
+}
+
+/* Reduce score text size*/
+.nhl-scores--horizontal .g5-component--nhl-scores .g5-component--nhl-scores__team-score {
+    font-size: 12px;
+    width: 11px;
+}
+
+/* Reduce margin between game boxes*/
+.nhl-scores--horizontal .g5-component--nhl-scores .g5-component--nhl-scores__panel {
+    padding: 12px 6px 4px;
+}
+
+/* Alter alignment of game status tag */
+.g5-component--nhl-scores .g5-component--nhl-scores__status-game-message {
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* distance the team logos a little bit so it looks better */
+.nhl-scores--horizontal .g5-component--nhl-scores__panel  .g5-component--nhl-scores__teams .g5-component--nhl-scores__team {
+    margin-bottom: 2px;
+}
+
+/* on live games, we need to restrict the width of the team info wrap */
+.g5-component--nhl-scores .g5-component--nhl-scores__game--live .g5-component--nhl-scores__team-info-wrap {
+    width: 65px;
+}
+
+/* there isn't really much space for PP or ES to be shown so e make it really small */
+.g5-component--nhl-scores .g5-component--nhl-scores__team-empty-net, .g5-component--nhl-scores .g5-component--nhl-scores__team-power-play {
+    font-size: 6px;
+}
+
+/* Fix misalignment of finished game status*/
+.g5-component--nhl-scores__status, .g5-component--nhl-scores__teams {
+    margin: auto
+}
 
 /* Make game time, game networks and game state text smaller */
-.g5-component--nhl-scores__info-content, .g5-component--nhl-scores__info-decisions-goalie, .g5-component--nhl-scores__info-goal-scorers-item, .g5-component--nhl-scores__info-goal-scorers-item-period-wrap, .g5-component--nhl-scores__info-goal-scorers-item-wrap, .g5-component--nhl-scores__info-label, .g5-component--nhl-scores__info-stat-leader, .g5-component--nhl-scores__status-current-period, .g5-component--nhl-scores__status-current-period-time, .g5-component--nhl-scores__status-game-broadcast, .g5-component--nhl-scores__status-game-time, .g5-component--nhl-scores__status-state-label, .g5-component--nhl-scores__status-viewing, .g5-component--nhl-scores__team-empty-net, .g5-component--nhl-scores__team-power-play, .g5-component--nhl-scores__team-record-losses, .g5-component--nhl-scores__team-record-overtime-losses, .g5-component--nhl-scores__team-record-wins, .g5-component--nhl-scores__team-sog-count, .g5-component--nhl-scores__team-sog-label .g5-component--nhl-scores__team-name, .g5-component--nhl-scores__team-score, .g5-component--nhl-scores .g5-component--nhl-scores__status-game-broadcast {
+.g5-component--nhl-scores__info-content, .g5-component--nhl-scores__info-decisions-goalie, .g5-component--nhl-scores__info-goal-scorers-item, .g5-component--nhl-scores__info-goal-scorers-item-period-wrap, .g5-component--nhl-scores__info-goal-scorers-item-wrap, .g5-component--nhl-scores__info-label, .g5-component--nhl-scores__info-stat-leader, .g5-component--nhl-scores__status-current-period, .g5-component--nhl-scores__status-current-period-time, .g5-component--nhl-scores__status-game-broadcast, .g5-component--nhl-scores__status-game-time, .g5-component--nhl-scores__status-state-label, .g5-component--nhl-scores__status-viewing, .g5-component--nhl-scores__team-empty-net, .g5-component--nhl-scores__team-power-play, .g5-component--nhl-scores__team-record-losses, .g5-component--nhl-scores__team-record-overtime-losses, .g5-component--nhl-scores__team-record-wins, .g5-component--nhl-scores__team-sog-count, .g5-component--nhl-scores__team-sog-label .g5-component--nhl-scores__team-name, .g5-component--nhl-scores__team-score, .g5-component--nhl-scores .g5-component--nhl-scores__status-game-broadcast, .g5-component--nhl-scores__status {
     font-size: 10px;
     text-align: center;
 }
@@ -70,7 +122,7 @@
 
 /*order the watch, gamecenter, etc., buttons vertically*/
 .g5-component--nhl-scores .g5-component--nhl-scores__buttons-item {
-    font-size: 6px; 
+    font-size: 4px; 
     text-align: center;
     display: inline;
 }
@@ -82,8 +134,8 @@
 
 /*order the watch, gamecenter, etc., buttons vertically and line them up properly*/
 .g5-component--nhl-scores .g5-component--nhl-scores__button {
-    margin-top: 11px;
-    padding-top: 28px;
+    margin-top: 8px;
+    padding-top: 30px;
 }
 
 /* Make Watching, Tickets and Gamecenter logo smaller so it doesn't clip on the smaller box */
