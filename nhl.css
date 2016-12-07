@@ -61,11 +61,20 @@
 .nhl-scores--horizontal .g5-component--nhl-scores .g5-component--nhl-scores__team-score {
     font-size: 12px;
     width: 11px;
+    text-align: left;
+    padding-left: 5px;
 }
 
 /* Reduce margin between game boxes*/
 .nhl-scores--horizontal .g5-component--nhl-scores .g5-component--nhl-scores__panel {
     padding: 12px 6px 4px;
+}
+
+/* Alter alignment of game status tag */
+.g5-component--nhl-scores .g5-component--nhl-scores__status-game-message {
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 /* Alter alignment of game status tag */
@@ -85,9 +94,19 @@
     width: 65px;
 }
 
+/* move team name closer to team logo so we have more space on the right of the team name */
+.g5-component--nhl-scores .g5-component--nhl-scores__team-info {
+    margin-left: 4px;
+}
+
 /* there isn't really much space for PP or ES to be shown so e make it really small */
 .g5-component--nhl-scores .g5-component--nhl-scores__team-empty-net, .g5-component--nhl-scores .g5-component--nhl-scores__team-power-play {
-    font-size: 6px;
+    font-size: 8px;
+}
+
+/* Fix misalignment of finished game status*/
+.g5-component--nhl-scores__status, .g5-component--nhl-scores__teams {
+    margin: auto
 }
 
 /* Fix misalignment of finished game status*/
